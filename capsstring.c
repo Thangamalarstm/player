@@ -3,11 +3,11 @@
 int main()
 {
 char s[10];
-int l,i;
+int a,i;
 printf("Enter the characters..:");
 scanf("%s",s);
-l=strlen(s);
-for(i=0;i<l;i++)
+a=strlen(s);
+for(i=0;i<a;i++)
 {
 if(i==0)
 {
