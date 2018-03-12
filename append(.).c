@@ -3,7 +3,8 @@
 int main()
 {
 char a[20];
-gets(a);
+printf("Enter the String..:");
+scanf("%s",a);
 strcat(a,".");
 printf("%s",a);
 return 0;
