@@ -3,25 +3,33 @@
 int main()
 {
     char s[30];
-int a,b,i,t1,t2;
+int a,i,t;
 printf("Enter the string..:");
 scanf("%s",s);
 a=strlen(s);
-b=a/2;
-for(i=0;i<b;i++)
+
+if(a%2==0)
 {
-  t1= s[i];
+for(i=0;i<a;i=i+2)
+{
+  t= s[i];
   s[i]=s[i+1];
-  s[i+1]=t1;
-printf("%s",s);
-break;
+  s[i+1]=t;
 }
-for(i=b;i<a;i++)
-{
-  t2= s[i];
-  s[i]=s[i+1];
-  s[i+1]=t2;
 printf("%s",s);
-break;
-} return 0;
+
+}
+else
+{
+for(i=0;i<a-1;i=i+2)
+{
+  t= s[i];
+  s[i]=s[i+1];
+  s[i+1]=t;
+}
+printf("%s",s);
+
+
+}
+return 0;
 }
